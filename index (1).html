@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH X | Premium Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background: #000; 
+            color: #fff; 
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* Background Animasi Mewah */
+        .bg-gradient-custom {
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #00d2ff;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 210, 255, 0.1);
+        }
+
+        .text-neon {
+            background: linear-gradient(to right, #00d2ff, #92fe9d, #00d2ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .btn-premium {
+            background: #fff;
+            color: #000;
+            font-weight: 700;
+            padding: 1.25rem 2.5rem;
+            border-radius: 99px;
+            transition: 0.4s ease;
+            display: inline-block;
+        }
+
+        .btn-premium:hover {
+            background: #00d2ff;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        /* Animasi Floating WhatsApp */
+        .wa-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 999;
+            background: #25d366;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-custom">
+
+    <a href="https://wa.me/6283826204068" class="wa-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 p-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass-card p-6 rounded-[2.5rem]">
+            <div class="text-3xl font-bold tracking-tighter uppercase">ZENITH<span class="text-sky-400">.</span>X</div>
+            <div class="hidden md:flex gap-12 font-bold text-[11px] tracking-[0.3em] uppercase">
+                <a href="#work" class="hover:text-sky-400 transition">Works</a>
+                <a href="#pricing" class="hover:text-sky-400 transition">Pricing</a>
+                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            </div>
+            <a href="https://wa.me/6283826204068" class="bg-white text-black px-8 py-3 rounded-full font-bold text-[10px] uppercase hover:invert transition">Consultation</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative">
+        <div class="absolute w-[800px] h-[800px] bg-sky-500/5 blur-[150px] rounded-full"></div>
+        <div class="text-center z-10">
+            <h1 class="text-7xl md:text-[140px] font-bold leading-none tracking-tighter mb-8 uppercase" data-aos="fade-down">
+                LUXURY <br> <span class="text-neon underline decoration-sky-500/20 italic">DIGITAL.</span>
+            </h1>
+            <p class="max-w-xl mx-auto text-slate-400 text-lg md:text-xl mb-12 font-light tracking-widest uppercase" data-aos="fade-up" data-aos-delay="200">
+                Menciptakan Standar Baru Dalam Ekosistem Digital Global.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://wa.me/6283826204068" class="btn-premium">START YOUR PROJECT</a>
+                <a href="#work" class="glass-card px-12 py-5 rounded-full font-bold hover:bg-white/10 transition">VIEW OUR SHOWCASE</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-20 border-y border-white/5 opacity-40 grayscale overflow-hidden whitespace-nowrap">
+        <div class="inline-block animate-marquee">
+            <span class="mx-10 text-3xl font-bold">MITSUBISHI</span>
+            <span class="mx-10 text-3xl font-bold">SAMSUNG</span>
+            <span class="mx-10 text-3xl font-bold">TESLA</span>
+            <span class="mx-10 text-3xl font-bold">ROLEX</span>
+            <span class="mx-10 text-3xl font-bold">APPLE</span>
+        </div>
+        <div class="inline-block animate-marquee">
+            <span class="mx-10 text-3xl font-bold">MITSUBISHI</span>
+            <span class="mx-10 text-3xl font-bold">SAMSUNG</span>
+            <span class="mx-10 text-3xl font-bold">TESLA</span>
+            <span class="mx-10 text-3xl font-bold">ROLEX</span>
+            <span class="mx-10 text-3xl font-bold">APPLE</span>
+        </div>
+    </div>
+
+    <section id="pricing" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl font-bold mb-4">Investment Plans</h2>
+                <p class="text-slate-500 uppercase tracking-widest text-xs">Pilih paket yang sesuai dengan visi brand Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-12 rounded-[3rem]" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4 uppercase">Starter</h3>
+                    <div class="text-4xl font-bold mb-8 text-sky-400">Rp 5.0M</div>
+                    <ul class="space-y-4 text-slate-400 text-sm mb-12">
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> Custom Premium Design</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> 5 Pages + Blog</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> Mobile Responsive</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> SEO Optimization</li>
+                    </ul>
+                    <a href="https://wa.me/6283826204068" class="block text-center border border-white/20 py-4 rounded-full font-bold hover:bg-white hover:text-black transition">Choose Starter</a>
+                </div>
+
+                <div class="glass-card p-12 rounded-[3rem] border-sky-500/50 bg-sky-500/5 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 right-10 bg-sky-500 text-black px-4 py-1 rounded-full text-[10px] font-bold">MOST POPULAR</div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Pro Agence</h3>
+                    <div class="text-4xl font-bold mb-8 text-sky-400">Rp 12.5M</div>
+                    <ul class="space-y-4 text-slate-400 text-sm mb-12">
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> All in Starter Package</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> E-Commerce System</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> Speed Optimization</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> 1 Year Free Support</li>
+                    </ul>
+                    <a href="https://wa.me/6283826204068" class="block text-center bg-white text-black py-4 rounded-full font-bold hover:bg-sky-500 hover:text-white transition">Choose Pro</a>
+                </div>
+
+                <div class="glass-card p-12 rounded-[3rem]" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold mb-4 uppercase">Elite</h3>
+                    <div class="text-4xl font-bold mb-8 text-sky-400">Custom</div>
+                    <ul class="space-y-4 text-slate-400 text-sm mb-12">
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> High-End Enterprise</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> Unlimited Features</li>
+                        <li><i class="fas fa-check text-sky-500 mr-2"></i> Exclusive 1:1 Support</li>
+                    </ul>
+                    <a href="https://wa.me/6283826204068" class="block text-center border border-white/20 py-4 rounded-full font-bold hover:bg-white hover:text-black transition">Contact Elite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto glass-card p-12 md:p-24 rounded-[4rem] text-center border-white/10" data-aos="zoom-in">
+            <h2 class="text-5xl font-bold mb-8 tracking-tighter">LET'S BUILD <br> <span class="text-neon">HISTORY.</span></h2>
+            <p class="text-slate-400 mb-16">Kirimkan rincian proyek Anda dan tim ahli kami akan memberikan penawaran eksklusif dalam 24 jam.</p>
+            <form action="https://formspree.io/f/moqwpzwa" method="POST" class="grid gap-6">
+                <input type="text" name="project" placeholder="Project Name" class="bg-white/5 p-5 rounded-2xl outline-none border border-white/10 focus:border-sky-500 transition" required>
+                <button type="submit" class="btn-premium w-full text-lg">SEND PROJECT INQUIRY</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-[10px] tracking-[1em] font-bold text-slate-700 uppercase">
+            &copy; 2026 ZENITH X STUDIO. THE WORLD STANDARD.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: false });
+    </script>
+</body>
+</html>
